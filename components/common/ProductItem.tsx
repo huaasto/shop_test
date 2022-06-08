@@ -17,7 +17,7 @@ export interface ProductCardProps {
   imgSizes?: string
 }
 
-const ProductCard: React.FC<ProductCardProps> = ({
+const ProductItem: React.FC<ProductCardProps> = ({
   product,
   imgWidth,
   imgHeight,
@@ -36,7 +36,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
   return (
     <Card
       sx={{
-        maxWidth: [700, imgWidth || 540],
+        maxWidth: [700, 540],
         p: 3,
         display: 'flex',
         flexDirection: 'column',
@@ -61,4 +61,4 @@ const ProductCard: React.FC<ProductCardProps> = ({
   )
 }
 
-export default ProductCard
+export default ProductItem

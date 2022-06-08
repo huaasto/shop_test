@@ -19,7 +19,7 @@ export interface ProductCardProps {
   imgSizes?: string
 }
 
-const ProductCardDemo: React.FC<ProductCardProps> = ({
+const ProductItemDemo: React.FC<ProductCardProps> = ({
   product,
   imgWidth,
   imgHeight,
@@ -91,4 +91,4 @@ const ProductCardDemo: React.FC<ProductCardProps> = ({
   )
 }
 
-export default ProductCardDemo
+export default ProductItemDemo

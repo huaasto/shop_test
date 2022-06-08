@@ -5,7 +5,7 @@ import { FC, useEffect, useState } from 'react'
 import { LoadingDots } from '@components/ui'
 import { Grid } from '@theme-ui/components'
 import { ProductCardProps } from '@components/common/ProductItem'
-import { ProductCardDemo, ProductCard } from '@components/common'
+import { ProductItem, ProductItemDemo } from '@components/common'
 
 import {
   getCollection,
@@ -73,8 +73,8 @@ export const ProductGrid: FC<ProductGridProps> = ({
     return <LoadingDots />
   }
   const ProductComponent: any = process.env.IS_DEMO
-    ? ProductCardDemo
-    : ProductCard
+    ? ProductItemDemo
+    : ProductItem
 
   return (
     <Grid gap={2} width={['46%', '30%', '24%']}>
