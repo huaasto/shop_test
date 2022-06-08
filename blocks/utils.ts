@@ -6,6 +6,6 @@ export function restrictedRegister(
   models: string[]
 ) {
   if (!Builder.isEditing || models.includes(builder.editingModel!)) {
-    return Builder.registerComponent(component, options)
+    return Builder.registerComponent(component, options) 
   }
-}
+} 

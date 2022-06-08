@@ -9,6 +9,7 @@ import builderConfig from '@config/builder'
 builder.init(builderConfig.apiKey)
 
 import '../blocks/ProductGrid/ProductGrid.builder'
+import '../blocks/ProductTestGrid/ProductGrid.builder'
 import '../blocks/CollectionView/CollectionView.builder'
 import '../blocks/ProductView/ProductView.builder'
 import '../blocks/CloudinaryImage/CloudinaryImage.builder'
